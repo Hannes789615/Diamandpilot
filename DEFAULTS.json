@@ -1,0 +1,56 @@
+{
+  "modId": "diamondpilot",
+  "minecraftVersion": "26.3",
+  "loader": "Fabric",
+  "menu": {
+    "style": "compact",
+    "theme": "dark-green",
+    "singleConfigurableOpenCloseKeybind": true,
+    "controls": ["start", "pause_resume", "immediate_stop", "xray_toggle"],
+    "statusFields": ["status", "diamond_ore_found", "diamond_ore_mined", "search_radius"]
+  },
+  "search": {
+    "initialRadiusBlocks": 40,
+    "radiusCanBeChangedInMenu": true,
+    "expandRadiusGradually": true,
+    "scanContinuouslyWhileMining": true,
+    "mineOnlyDiamondOre": true,
+    "tunnelWidthBlocks": 1,
+    "tunnelHeightBlocks": 2,
+    "tunnelStraightUntilNewChunksLoad": true,
+    "largestReachableVeinFirst": true,
+    "goToNextVeinAfterFinishing": true,
+    "rememberUnreachableVeins": true,
+    "avoidRescanningExploredAreas": true
+  },
+  "xray": {
+    "manualOnly": true,
+    "defaultEnabled": false,
+    "diamondOreGlow": false,
+    "normalBlocksDisplayModes": ["invisible", "transparent"],
+    "canReadUnloadedChunks": false
+  },
+  "safety": {
+    "stopOnLava": true,
+    "stopOnWater": true,
+    "retreatFromMonstersThenResumeWhenSafe": true,
+    "pickaxeDurabilityThresholdPercent": 20,
+    "durabilityThresholdCanBeChangedInMenu": true,
+    "stopIfPickaxeBreaks": true,
+    "neverAutoSwitchPickaxe": true,
+    "dropOnlyStoneWhenInventoryFull": true,
+    "stopIfInventoryStillFull": true,
+    "mineGravelAndSand": true,
+    "placeTorches": false,
+    "attemptAlternatePathIfStuck": true,
+    "disconnectDisablesAutomation": true,
+    "autoReconnect": false,
+    "automationStartsInactiveAfterRestart": true
+  },
+  "persistence": {
+    "saveFoundAndMinedCountersSeparately": true,
+    "saveDistanceTravelled": true,
+    "saveExploredAreas": true,
+    "saveLastPosition": true
+  }
+}
